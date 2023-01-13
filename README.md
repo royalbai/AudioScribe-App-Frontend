@@ -1,10 +1,12 @@
 # Joice-App-Frontend
 
 Summary 
+
 What is it? Think of this as your elevator pitch for your product. Limit it to a few sentences. 
 Joice is a web application that helps individuals journal their thoughts in the moment through voice and have them automatically transcribed for easier organization and access. This provides a simple outlet for users to unload their thoughts and stay more mindful during the day.
 
 Problem Background 
+
 Who is the customer and what is the need or problem we’re addressing? Why should we address this problem now? What are all of the things we know? How do we know this is a problem? 
 Example Users: Students, creatives, people who want to get into journaling
 Journaling is defined as “entering or recording daily thoughts, experiences, etc.” and according to a study about half of us have written in a journal at some point in our lives, and somewhere in the neighborhood of 1 in 6 people are active journal writers right now. 
@@ -14,6 +16,7 @@ While there are many journaling apps out in the market, there isn’t an effecti
 
 
 Goals
+
 Talk about the general high-level goals of doing this work. What are we trying to accomplish by solving the problem? 
 By creating a simple and quick way to record their thoughts or experiences at any moment and having them transcribed to text automatically, users will be able to get into the action of journaling without realizing or much commitment. Journaling doesn’t have to be a formal writing process with prompts or your daily diary, it can simply be an action of unloading whatever is on the user’s mind with no judgment or no formality.  
 Help people record their thoughts (journaling) easily
@@ -26,6 +29,7 @@ Sharable transcribing
 
 
 User Stories 
+
 Put 3-5 user stories here. Keep it high level. As a <type of user>, I want to <goal to be accomplished>, so that <reason for the goal>. 
 As a user, I want to record my thoughts in the moment, so that I won’t forget them and keep my brain unclogged
 As a user, I want to have my recorded thoughts transcribed, so that I won’t have to manually type them out
@@ -35,6 +39,7 @@ As a user, I want to build a habit of journaling my thoughts, so that I can beco
 As a user, I want to share my thoughts with my friends and colleagues about a particular idea. 
 
 Proposed Solution 
+
 What are you proposing is the solution to the problem being tackled? Keep this to a few sentences, again focusing on the WHAT, not the HOW.
 Problem Statement: How might we make the experience of journaling more intuitive and exciting for busy people so that they become more present and mindful in their lives? 
 
