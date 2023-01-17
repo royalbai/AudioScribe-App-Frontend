@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognition";
 
-const Journaling = () => {
-  const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition({ autoStop: false });
+function Journaling() {
+
+  const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
   const [journals, setJournals] = useState([]);
 
   if (!browserSupportsSpeechRecognition) {
@@ -14,11 +15,19 @@ const Journaling = () => {
     resetTranscript();
   }
 
+  const micOn = () => {
+    SpeechRecognition.startListening({ continuous:true });
+  }
+
+  const micOff = () => {
+    SpeechRecognition.stopListening();
+  }
+
   return (
     <div>
       <p>Microphone: {listening ? "on" : "off"}</p>
-      <button onClick={SpeechRecognition.startListening}>Start</button>
-      <button onClick={SpeechRecognition.stopListening}>Stop</button>
+      <button onClick={micOn}>Start</button>
+      <button onClick={micOff}>Stop</button>
       <button onClick={handleSaveJournal}>Save Journal</button>
       <p>{transcript}</p>
       <ul>
