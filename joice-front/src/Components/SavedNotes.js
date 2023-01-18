@@ -1,9 +1,10 @@
 import React from "react";
 
 function SavedNotes() {
+
     return (
         <div>
-            <p>Hello World</p>
+            <p>Hello world</p>
         </div>
     )
 }

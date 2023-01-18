@@ -4,6 +4,7 @@ import SpeechRecognition, { useSpeechRecognition } from "react-speech-recognitio
 function Journaling() {
 
   const { transcript, listening, resetTranscript, browserSupportsSpeechRecognition } = useSpeechRecognition();
+  const [isListening, setIsListening] = useState(false);
   const [journals, setJournals] = useState([]);
 
   if (!browserSupportsSpeechRecognition) {
@@ -15,19 +16,19 @@ function Journaling() {
     resetTranscript();
   }
 
-  const micOn = () => {
-    SpeechRecognition.startListening({ continuous:true });
-  }
-
-  const micOff = () => {
-    SpeechRecognition.stopListening();
+  const toggleMic = () => {
+    if(isListening){
+      SpeechRecognition.stopListening();
+    }else{
+      SpeechRecognition.startListening({ continuous:true });
+    }
+    setIsListening(!isListening);
   }
 
   return (
     <div>
       <p>Microphone: {listening ? "on" : "off"}</p>
-      <button onClick={micOn}>Start</button>
-      <button onClick={micOff}>Stop</button>
+      <button onClick={toggleMic}>{isListening ? "Stop" : "Start"}</button>
       <button onClick={handleSaveJournal}>Save Journal</button>
       <p>{transcript}</p>
       <ul>
@@ -41,4 +42,5 @@ function Journaling() {
     </div>
   );
 };
+
 export default Journaling;
