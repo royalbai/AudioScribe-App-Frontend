@@ -27,7 +27,7 @@ function Journaling() {
 
   return (
     <div>
-      <p>Microphone: {listening ? "on" : "off"}</p>
+      <h3>{listening ? <i className="fa-solid fa-microphone-lines"></i> : <i className="fa-solid fa-microphone-lines-slash"></i>}</h3>
       <button onClick={toggleMic}>{isListening ? "Stop" : "Start"}</button>
       <button onClick={handleSaveJournal}>Save Journal</button>
       <p>{transcript}</p>

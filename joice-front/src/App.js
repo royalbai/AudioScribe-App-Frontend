@@ -29,7 +29,7 @@ function App() {
           <button className="burgerIcon" ref={mobileMenuIconRef} onClick={handleMobileMenuIconClick}>
             <div className="navBar"></div>
           </button>
-          <p>Create New Journal</p>
+          <p>Home</p>
         </div>
       </header>
       <nav className="mobileNav" ref={mobileMenuDropdownRef}>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -385,4 +386,31 @@ h1 {
 .mobileNav.active p {
   font-size: 1rem;
   width: 100%;
+}
+
+.homepage a {
+  display: flex;
+  justify-content: center;
+}
+.homepage button {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+.homepage div {
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
+}
+.homepage div h4 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.homepage div ul {
+  list-style: "🚀";
+  list-style-position: inside;
+}
+.homepage div p, .homepage div li {
+  margin-bottom: 10px;
 }/*# sourceMappingURL=styles.css.map */
