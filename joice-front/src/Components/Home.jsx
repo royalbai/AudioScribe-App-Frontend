@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
     return (
-        <div className="homepage">
+        <div className="homepage wrapper">
             <Link to="/journaling"><button><i className="fa-regular fa-pen-to-square"></i>Create New Journal</button></Link>
             <div>
                 <h4>Motivational Quote of the Day</h4>

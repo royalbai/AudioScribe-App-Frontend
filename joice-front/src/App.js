@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <div className="App wrapper">
+    <div className="App">
       <header>
         <h1>Joice</h1>
         <div className="navHeader">

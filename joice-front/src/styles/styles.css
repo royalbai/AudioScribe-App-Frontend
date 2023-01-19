@@ -280,7 +280,7 @@ img {
 
 .wrapper {
   max-width: 1920px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -399,7 +399,7 @@ h1 {
   border: 1px solid black;
 }
 .homepage div {
-  margin: 10px;
+  margin: 10px 0;
   padding: 10px;
   background-color: lightgray;
 }
@@ -413,4 +413,32 @@ h1 {
 }
 .homepage div p, .homepage div li {
   margin-bottom: 10px;
+}
+
+.journaling p {
+  text-align: center;
+}
+.journaling input {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  padding-top: 10px;
+}
+.journaling h3 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px 0;
+}
+.journaling button {
+  display: block;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 10px;
+}
+.journaling ul li {
+  margin: 10px 0;
+}
+.journaling ul p {
+  margin: 10px 0;
+  text-align: start;
 }/*# sourceMappingURL=styles.css.map */
