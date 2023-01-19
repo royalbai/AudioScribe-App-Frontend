@@ -1,9 +1,11 @@
 import React, { useRef, useEffect } from 'react';
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
+import Home from './Components/Home';
 import Journaling from "./Components/Journaling";
 import SavedNotes from "./Components/SavedNotes";
+import Settings from "./Components/Settings";
 
 function App() {
   const mobileMenuIconRef = useRef(null);
@@ -21,34 +23,45 @@ function App() {
 
   return (
     <div className="App wrapper">
-      <h1>Joice</h1>
-      <section className="navHeader">
-        <button className="burgerIcon" ref={mobileMenuIconRef} onClick={handleMobileMenuIconClick}>
-          <div className="navBar"></div>
-        </button>
-        <p>Create New Journal</p>
-      </section>
+      <header>
+        <h1>Joice</h1>
+        <div className="navHeader">
+          <button className="burgerIcon" ref={mobileMenuIconRef} onClick={handleMobileMenuIconClick}>
+            <div className="navBar"></div>
+          </button>
+          <p>Create New Journal</p>
+        </div>
+      </header>
       <nav className="mobileNav" ref={mobileMenuDropdownRef}>
         <ul>
-            <li>
-                <p onClick={handleLinkClick}>yo</p>
-            </li>
-            <li>
-                <p onClick={handleLinkClick}>yo</p>
-            </li>
-            <li>
-                <p onClick={handleLinkClick}>yo</p>
-            </li>
-            <li>
-                <p onClick={handleLinkClick}>yo</p>
-            </li>
+          <li>
+            <i className="fa-solid fa-user"></i>
+            <div>
+              <p>Name</p>
+              <p>Email@joice.ca</p>
+            </div>
+          </li>
+          <li>
+            <i className="fa-solid fa-house-chimney"></i>
+            <Link to="/" onClick={handleLinkClick}>Home</Link>
+          </li>
+          <li>
+            <i className="fa-solid fa-feather"></i>
+            <Link to="/journaling" onClick={handleLinkClick}>Journals</Link>
+          </li>
+          <li>
+            <i className="fa-solid fa-gear"></i>
+            <Link to="/settings" onClick={handleLinkClick}>Settings</Link>
+          </li>
         </ul>
     </nav>
       <Routes>
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/" element={<Journaling />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/journaling" element={<Journaling />} />
         <Route path="/savednotes" element={<SavedNotes />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </div>
   );

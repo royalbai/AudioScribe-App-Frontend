@@ -1,102 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  max-width: 1920px;
-  margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
-}
-
-img {
-  display: block;
-}
-
-.wrapper {
-  max-width: 1260px;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.navHeader {
-  display: flex;
-  align-items: center;
-}
-.navHeader p {
-  margin-left: 30px;
-}
-
-.burgerIcon {
-  display: block;
-  width: 35px;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  z-index: 30;
-}
-.burgerIcon .navBar, .burgerIcon:before, .burgerIcon:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 5px;
-  background-color: black;
-  border-radius: 50%;
-  margin: 5px 0;
-  transition: 0.5s;
-}
-
-.burgerIcon.active:before {
-  transform: rotate(45deg) translate(6px, 7px);
-}
-.burgerIcon.active:after {
-  transform: rotate(-45deg) translate(7px, -8px);
-}
-.burgerIcon.active .navBar {
-  opacity: 0;
-}
-
-.mobileNav {
-  display: none;
-}
-
-.mobileNav.active {
-  display: block;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 20;
-  transition: 0.5s;
-}
-.mobileNav.active ul {
-  flex-direction: column;
-  padding-top: 60px;
-}
-.mobileNav.active li {
-  width: 100%;
-  text-align: center;
-}
-.mobileNav.active p {
-  font-size: 2rem;
-  margin: 0 auto;
-  padding: 30px;
-  width: 100%;
-}
-.mobileNav.active p:hover, .mobileNav.active p:focus {
-  background-color: royalblue;
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -353,4 +254,135 @@ html {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+html {
+  font-size: 125%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+h1 {
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 0;
+  padding: 10px 0;
+  background-color: lightblue;
+}
+
+.navHeader {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  background-color: lightsalmon;
+}
+.navHeader p {
+  margin-left: 20px;
+}
+
+.burgerIcon {
+  display: block;
+  width: 25px;
+  margin-left: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+}
+.burgerIcon .navBar, .burgerIcon:before, .burgerIcon:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: 100px;
+  margin: 5px 0;
+  transition: 0.5s;
+}
+
+.burgerIcon.active:before {
+  transform: rotate(45deg) translate(6px, 7.2px);
+}
+.burgerIcon.active:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+.burgerIcon.active .navBar {
+  opacity: 0;
+}
+
+.mobileNav {
+  display: none;
+}
+
+.mobileNav.active {
+  display: block;
+  position: absolute;
+  top: 67px;
+  width: 90%;
+  height: 300px;
+  z-index: 20;
+  background-color: lightseagreen;
+  border: 1px solid black;
+}
+.mobileNav.active ul {
+  flex-direction: column;
+  padding-top: 10px;
+}
+.mobileNav.active li {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px 50px;
+}
+.mobileNav.active li:hover, .mobileNav.active li:focus {
+  background-color: royalblue;
+}
+.mobileNav.active li i {
+  margin-right: 20px;
+}
+.mobileNav.active li div {
+  text-align: left;
+}
+.mobileNav.active p {
+  font-size: 1rem;
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */
