@@ -7,6 +7,7 @@ import Nav from './Components/Nav';
 import Journaling from "./Components/Journaling";
 import SavedNotes from "./Components/SavedNotes";
 import Settings from "./Components/Settings";
+import Footer from './Components/Footer';
 
 function App() {
 
@@ -25,6 +26,9 @@ function App() {
         <Route path="/savednotes" element={<SavedNotes />} />
         <Route path="/settings" element={<Settings />} />
       </Routes>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

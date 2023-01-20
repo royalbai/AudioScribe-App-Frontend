@@ -459,6 +459,9 @@ h1 {
   text-align: start;
 }
 
+.settings {
+  padding-bottom: 300px;
+}
 .settings h2 {
   border-bottom: 1px solid black;
 }
@@ -477,4 +480,19 @@ h1 {
   margin: 0 auto;
   margin-top: 20px;
   padding: 5px 10px;
+}
+
+footer {
+  background-color: lightgreen;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (min-width: 940px) {
+  .wrapper {
+    width: 50%;
+  }
 }/*# sourceMappingURL=styles.css.map */
