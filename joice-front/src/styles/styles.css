@@ -316,8 +316,8 @@ h1 {
   background-color: lightsalmon;
 }
 .navHeader p {
-  margin-left: 10px;
-  margin-right: 180px;
+  margin-left: 20px;
+  width: 220px;
 }
 .navHeader i {
   margin: 0 10px;
@@ -445,4 +445,24 @@ h1 {
 .journaling ul p {
   margin: 10px 0;
   text-align: start;
+}
+
+.settings h2 {
+  border-bottom: 1px solid black;
+}
+.settings form {
+  margin-top: 25px;
+}
+.settings label {
+  display: block;
+}
+.settings i {
+  margin-left: 15px;
+}
+
+.submit {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px 10px;
 }/*# sourceMappingURL=styles.css.map */
