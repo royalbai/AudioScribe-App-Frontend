@@ -1,6 +1,6 @@
 @media (min-width: 940px) {
     .wrapper {
-        width: 50%;
+        width: 40%;
     }
 
     .navHeader {
@@ -11,7 +11,7 @@
         display: block;
         position: absolute;
         width: 20%;
-        height: 88.2%;
+        height: 92.7vh;
         z-index: 20;
         background-color: lightseagreen;
             
@@ -60,5 +60,50 @@
                 }
     }
 
-    
+    .calendar {
+        display: block;
+        position: absolute;
+        top: 68px;
+        right: 0;
+        width: 20%;
+        height: 92.7vh;
+        padding: 50px;
+        background-color: lightgoldenrodyellow;
+        z-index: 30;
+    }
+
+    .customCalendar {
+        width: 300px;
+        height: 300px;
+        border: 2px solid #333;
+        border-radius: 10px;
+    }
+
+    .customCalendar .react-calendar__month-view__weekdays {
+        background-color: #ddd;
+    }
+
+    .customCalendar .react-calendar__tile {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .customCalendar .react-calendar__tile:hover {
+        background-color: #eee;
+        cursor: pointer;
+    }
+
+    .customCalendar .react-calendar__tile--active {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .calButton {
+        background-color: transparent;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+        border-radius: 25px;
+    }
 }
