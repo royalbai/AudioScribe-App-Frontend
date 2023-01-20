@@ -1,4 +1,4 @@
-# Joice-App-Frontend
+# AudioScribe-App-Frontend
 
 Summary 
 
