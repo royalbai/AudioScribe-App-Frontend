@@ -17,7 +17,7 @@ function App() {
     <div>
       <div className="App">
         <header>
-          <h1>Joice</h1>
+          <h1>AudioScribe</h1>
           <Nav />
           <CustomCalendar />
         </header>
