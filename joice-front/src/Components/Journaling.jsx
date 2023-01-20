@@ -39,9 +39,9 @@ function Journaling() {
       <ul>
         {journals.map((journal, index) => (
           <li key={index}>
-            <h5>🚀 {journal.title}</h5>
+            <h5>{journal.title}</h5>
             <p>{journal.text}</p>
-            <p>{journal.date}</p>
+            <p>🚀 {journal.date}</p>
           </li>
         ))}
       </ul>

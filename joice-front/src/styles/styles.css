@@ -495,4 +495,51 @@ footer {
   .wrapper {
     width: 50%;
   }
+  .navHeader {
+    display: none;
+  }
+  .mobileNav {
+    display: block;
+    position: absolute;
+    width: 20%;
+    height: 88.2%;
+    z-index: 20;
+    background-color: lightseagreen;
+  }
+  .mobileNav ul {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+  .mobileNav li {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+  }
+  .mobileNav li a {
+    padding: 20px;
+    border-radius: 25px;
+  }
+  .mobileNav li a:hover, .mobileNav li a:focus {
+    background-color: royalblue;
+  }
+  .mobileNav li i {
+    margin-right: 20px;
+  }
+  .mobileNav li div {
+    text-align: left;
+  }
+  .mobileNav ul li:nth-child(1) {
+    border: 1px solid black;
+    border-radius: 15px;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 10px;
+  }
+  .mobileNav p {
+    font-size: 1rem;
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */
