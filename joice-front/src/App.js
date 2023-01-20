@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useState } from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import SignIn from "./Components/SignIn";
 import SignUp from "./Components/SignUp";
@@ -8,6 +8,7 @@ import SavedNotes from "./Components/SavedNotes";
 import Settings from "./Components/Settings";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("Home");
   const mobileMenuIconRef = useRef(null);
   const mobileMenuDropdownRef = useRef(null);
 
@@ -16,9 +17,10 @@ function App() {
     mobileMenuDropdownRef.current.classList.toggle("active");
   }
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (page) => {
     mobileMenuDropdownRef.current.classList.remove("active");
     mobileMenuIconRef.current.classList.remove("active");
+    setCurrentPage(page);
   }
 
   return (
@@ -29,7 +31,9 @@ function App() {
           <button className="burgerIcon" ref={mobileMenuIconRef} onClick={handleMobileMenuIconClick}>
             <div className="navBar"></div>
           </button>
-          <p>Home</p>
+          <p>{currentPage}</p>
+          <i className="fa-solid fa-magnifying-glass"></i>
+          <i className="fa-regular fa-calendar"></i>
         </div>
       </header>
       <nav className="mobileNav" ref={mobileMenuDropdownRef}>
@@ -43,15 +47,15 @@ function App() {
           </li>
           <li>
             <i className="fa-solid fa-house-chimney"></i>
-            <Link to="/" onClick={handleLinkClick}>Home</Link>
+            <Link to="/" onClick={() => handleLinkClick("Home")}>Home</Link>
           </li>
           <li>
             <i className="fa-solid fa-feather"></i>
-            <Link to="/journaling" onClick={handleLinkClick}>Journals</Link>
+            <Link to="/journaling" onClick={() => handleLinkClick("Create New Journal")}>Journals</Link>
           </li>
           <li>
             <i className="fa-solid fa-gear"></i>
-            <Link to="/settings" onClick={handleLinkClick}>Settings</Link>
+            <Link to="/settings" onClick={() => handleLinkClick("Settings")}>Settings</Link>
           </li>
         </ul>
     </nav>

@@ -316,7 +316,11 @@ h1 {
   background-color: lightsalmon;
 }
 .navHeader p {
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-right: 180px;
+}
+.navHeader i {
+  margin: 0 10px;
 }
 
 .burgerIcon {
